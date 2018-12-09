@@ -225,3 +225,48 @@ nav ul {
   margin-right: 5%;
   color: hsl(0, 0%, 35%);
 }
+
+/* section 2 */
+
+.section-2 h1 {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: hsl(0, 0%, 35%);
+}
+
+.section-2-container {
+  margin: 32px auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  margin: 0 1%;
+}
+
+.course h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: hsl(0, 0%, 35%);
+  margin: 1rem;
+}
+
+.course img {
+  height: auto;
+}
+
+#courses {
+  margin: 0.5rem 1rem;
+}
+
+#modules {
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+}
