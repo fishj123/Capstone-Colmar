@@ -2,17 +2,21 @@
 /*global styles */
 
 html {
-  font-family: Helvetica;
+  font-family: Roboto;
 }
 
 h1 {
   display: block;
-  font-size: 1.5em;
+  font-size: 3rem;
+  font-weight: 900;
+  color: hsl(0, 0%, 35%)
 }
 
 h3 {
   display: block;
   font-size: 1.17em;
+  font-weight: 600;
+  font-size: 2rem;
 
 }
 
@@ -20,15 +24,24 @@ a {
   text-decoration: none;
 }
 
+.site-container {
+  position: relative;
+  top: 4rem;
+}
+
 /*nav section */
 
 .container {
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 5;
 }
 
 nav img {
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 nav span {
@@ -37,20 +50,22 @@ nav span {
 
 nav li {
   display: inline;
-  padding: 16px;
+  padding: 1rem;
 }
 
 nav ul {
-  margin-right: 24px;
-  padding: 24px 0;
+  margin-right: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 #academy {
   margin-right: auto;
+  font-weight: 400;
+  color: hsl(0, 0%, 65%);
 }
 
 #colmar {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 
@@ -64,7 +79,7 @@ nav ul {
 .banner img {
   width: 60%;
   height: auto;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
   display: inline-block;
 }
 
@@ -76,17 +91,12 @@ nav ul {
 
 .banner .banner-text h1 {
   margin: 2rem 0;
-  font-size: 4rem;
-  line-height: 5rem;
-  font-weight: 900;
-  color: hsl(0, 0%, 35%);
+  line-height: 4rem;
 }
 
 .banner .banner-text h3 {
   margin: 2rem 0;
   line-height: 3rem;
-  font-weight: 600;
-  font-size: 2.5rem;
   color: hsl(0, 0%, 35%);
 }
 
@@ -120,18 +130,15 @@ nav ul {
 }
 
 .section-1-container .column-1 {
-  padding: 0 24px;
+  padding: 0 1.5rem;
 }
 
 .column-1 img {
-  padding: 32px 0;
+  padding: 2rem 0;
 }
 
 .column-1 h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  padding-bottom: 24px;
-  color: hsl(0, 0%, 35%);
+  padding-bottom: 1.5rem;
 }
 
 .column-1 p {
@@ -142,7 +149,7 @@ nav ul {
 }
 
 .column-1 span {
-  padding: 32px 0;
+  padding: 1.5rem 0;
   font-size: 1.2rem;
   color: hsl(0, 0%, 35%);
 }
@@ -155,7 +162,7 @@ nav ul {
 }
 
 .section-1-container .column-2 {
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 .section-1 .column-2 .article-1 {
@@ -205,18 +212,16 @@ nav ul {
   width: 35%;
   height: auto;
   float: left;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .section-1 .column-2 h3 {
   padding: 8px 0;
-  font-weight: 600;
-  font-size: 2.5rem;
   color: hsl(0, 0%, 35%);
 }
 
 .section-1 .column-2 p {
-  margin: 8px 0;
+  margin: 0.5rem 0;
   font-size: 1.5rem;
 }
 
@@ -237,13 +242,10 @@ nav ul {
   margin-top: 2rem;
   padding-top: 2rem;
   text-align: center;
-  font-size: 3rem;
-  font-weight: 900;
-  color: hsl(0, 0%, 35%);
 }
 
 .section-2-container {
-  margin: 32px auto;
+  margin: 2rem auto;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -257,8 +259,6 @@ nav ul {
 }
 
 .course h3 {
-  font-weight: 600;
-  font-size: 2rem;
   color: hsl(0, 0%, 35%);
   margin: 1rem;
 }
@@ -288,11 +288,7 @@ nav ul {
 .section-3 h1 {
   text-align: center;
   margin: 2rem 0;
-
   padding-top: 2rem;
-  font-size: 3rem;
-  font-weight: 900;
-  color: hsl(0, 0%, 35%);
 }
 
 .section-3-container {
@@ -309,8 +305,6 @@ nav ul {
 .section-3 .column-1 h3 {
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
-  font-weight: 600;
-  font-size: 2rem;
   color: hsl(0, 0%, 35%);
 }
 
@@ -350,8 +344,6 @@ nav ul {
 }
 
 .section-3 .column-2 h3 {
-  font-weight: 600;
-  font-size: 2rem;
   color: hsl(0, 0%, 35%);
   margin: 1rem;
 }
@@ -362,4 +354,22 @@ nav ul {
 
 .section-3 img {
   padding: 1rem;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  height: 7rem;
+  border-top: 1px solid hsl(0, 0%, 85%);
+}
+
+footer span {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+#copyright {
+  margin-right: auto;
+  margin-left: 1.5rem;
 }
