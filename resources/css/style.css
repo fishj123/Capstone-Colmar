@@ -14,9 +14,9 @@ h1 {
 
 h3 {
   display: block;
-  font-size: 1.17em;
   font-weight: 600;
   font-size: 2rem;
+  color: hsl(0, 0%, 35%);
 
 }
 
@@ -27,7 +27,11 @@ a {
 .site-container {
   position: relative;
   top: 4rem;
+  width: 2000px;
+  height: auto;
+  margin: auto;
 }
+
 
 /*nav section */
 
@@ -51,6 +55,7 @@ nav span {
 nav li {
   display: inline;
   padding: 1rem;
+  color: hsl(0, 0%, 35%)
 }
 
 nav ul {
@@ -68,12 +73,10 @@ nav ul {
   font-weight: 900;
 }
 
-
-
 /* banner section */
 
 .banner {
-  background-color: hsl(0, 0%, 80%)
+  background-color: hsl(0, 0%, 80%);
 }
 
 .banner img {
@@ -97,7 +100,6 @@ nav ul {
 .banner .banner-text h3 {
   margin: 2rem 0;
   line-height: 3rem;
-  color: hsl(0, 0%, 35%);
 }
 
 
@@ -198,7 +200,7 @@ nav ul {
   flex-direction: row;
   border: 1px solid hsl(0, 0%, 80%);
   margin: 1px 0;
-  background-color: hsl(0, 0%, 80%)
+  background-color: hsl(0, 0%, 80%);
 }
 
 .section-1 .column-2 .article-3-text {
@@ -217,7 +219,6 @@ nav ul {
 
 .section-1 .column-2 h3 {
   padding: 8px 0;
-  color: hsl(0, 0%, 35%);
 }
 
 .section-1 .column-2 p {
@@ -259,7 +260,6 @@ nav ul {
 }
 
 .course h3 {
-  color: hsl(0, 0%, 35%);
   margin: 1rem;
 }
 
@@ -305,7 +305,6 @@ nav ul {
 .section-3 .column-1 h3 {
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
-  color: hsl(0, 0%, 35%);
 }
 
 .section-3 .column-1 p {
@@ -321,7 +320,7 @@ nav ul {
 .section-3 .column-2 .article-1 {
   display: flex;
   flex-direction: row;
-  background-color: hsl(0, 0%, 85%);
+  background-color: hsl(0, 0%, 80%);
 }
 
 .section-3 .column-2 .article-1-text {
@@ -344,7 +343,6 @@ nav ul {
 }
 
 .section-3 .column-2 h3 {
-  color: hsl(0, 0%, 35%);
   margin: 1rem;
 }
 
