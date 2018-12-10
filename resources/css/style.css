@@ -35,7 +35,11 @@ a {
 
 /*nav section */
 
-.container {
+.mobile {
+  display: none;
+}
+
+.desktop {
   display: flex;
   align-items: center;
   position: fixed;
@@ -71,6 +75,23 @@ nav ul {
 
 #colmar {
   font-weight: 900;
+}
+
+@media only screen and (max-width: 510px) {
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+    padding: 1rem;
+  }
+
+  .desktop {
+    display: none;
+  }
 }
 
 /* banner section */
@@ -117,6 +138,47 @@ nav ul {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 510px) {
+  .banner .banner-text {
+    width: 90%;
+    position: static;
+    padding-bottom: 32px;
+
+  }
+
+  .banner-text .button {
+    width: 100%;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+    margin-bottom: auto;
+    padding: 0;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner .banner-text h1 {
+    font-size: 13rem;
+    line-height: 13rem;
+  }
+
+  .banner .banner-text h3 {
+    margin-bottom: 1.5rem;
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+
+  .banner .banner-text span {
+    padding: 3rem 0;
+}
+
+}
 
 /* Section 1 */
 
@@ -233,6 +295,44 @@ nav ul {
   color: hsl(0, 0%, 35%);
 }
 
+@media only screen and (max-width: 510px) {
+  .section-1 .column-1 {
+    display: none;
+  }
+
+  .section-1 .column-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-1 .column-2 .article-1 {
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid red;
+    width: 90%;
+
+  }
+
+  .section-1 .column-2 .article-1-text {
+
+  }
+
+  .section-1 .column-2 .article-2 {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .section-1 .column-2 .article-3 {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+}
+
 /* section 2 */
 
 .section-2 {
@@ -281,6 +381,39 @@ nav ul {
   font-size: 1.5rem;
   line-height: 2rem;
   color: hsl(0, 0%, 35%);
+}
+
+@media only screen and (max-width: 510px) {
+  .section-2-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-2 h1 {
+    font-size: 13rem;
+  }
+
+  .course {
+    width: 100%;
+  }
+
+  .course h3 {
+    background-color: hsl(0, 0%, 85%);
+    font-size: 8rem;
+    padding: 2rem;
+  }
+
+.section-2 img {
+  display: none;
+}
+
+  #courses {
+    display: none;
+  }
+
+  #modules {
+    display: none;
+  }
 }
 
 /* section 3 */
@@ -354,6 +487,24 @@ nav ul {
   padding: 1rem;
 }
 
+@media only screen and (max-width: 510px) {
+  .section-3 h1 {
+    font-size: 13rem;
+  }
+
+  .section-3 .column-2 {
+    display: none;
+  }
+
+  .section-3 .column-1 {
+    width: 100%;
+  }
+
+  .section-3 h3, p {
+    display: none;
+  }
+}
+
 /*footer*/
 
 footer {
@@ -370,4 +521,8 @@ footer span {
 #copyright {
   margin-right: auto;
   margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 510px) {
+
 }
