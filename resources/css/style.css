@@ -1,5 +1,5 @@
 
-/*global styles */
+/*These are the global styles */
 
 html {
   font-family: Roboto;
@@ -22,8 +22,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #552700;
-  font-weight: bold;
+  color: #D49B6A;
 }
 
 .site-container {
@@ -41,7 +40,7 @@ a {
   }
 }
 
-/*nav section */
+/*This is the nav section */
 
 .mobile {
   display: none;
@@ -78,6 +77,10 @@ nav li {
   color: hsl(0, 0%, 35%)
 }
 
+li a:hover {
+  color: black;
+}
+
 nav ul {
   margin-right: 1.5rem;
   padding: 1.5rem 0;
@@ -86,11 +89,25 @@ nav ul {
 #academy {
   margin-right: auto;
   font-weight: 400;
-  color: #417D80;
+  color: black;
+  position: relative;
+  top: 1px;
+  padding-left: 2px;
 }
 
 #colmar {
   font-weight: 900;
+  color: white;
+  color: white;
+    text-shadow:
+    -1px -1px 0 #417D80,
+    1px -1px 0 #417D80,
+    -1px 1px 0 #417D80,
+    1px 1px 0 #417D80;
+}
+
+#colmar a {
+  color: white;
 }
 
 
@@ -119,7 +136,7 @@ nav ul {
   }
 }
 
-/* banner section */
+/* This is the banner section */
 
 .banner {
   background-color: #417D80;
@@ -142,13 +159,13 @@ nav ul {
 }
 
 .banner .banner-text h1 {
-  margin: 2vw 0;
-  line-height: 4vw;
-  padding-bottom: 2vw;
+  margin: 1vw 0;
+  line-height: 3.5vw;
+  padding-bottom: 1vw;
 }
 
 .banner .banner-text h3 {
-  margin: 2vw 0;
+  margin: 1.5vw 0;
   line-height: 3vw;
   padding-bottom: 1.5vw;
 }
@@ -164,9 +181,24 @@ nav ul {
   border-radius: 5px;
 }
 
-.banner-text .button span {
+.button span {
   padding: 0.5vw 0;
   font-size: 2vw;
+}
+
+.button a {
+  color: white;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.button:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -261,7 +293,7 @@ nav ul {
 
 
 
-/* Section 1 */
+/* This is Section 1 */
 
 .section-1-container {
   display: inline-flex;
@@ -367,6 +399,10 @@ nav ul {
 .section-1 .column-2 p {
   margin: 0.5rem 0;
   font-size: 1.5rem;
+}
+
+.section-1 .column-2 p:hover {
+  color: black;
 }
 
 .section-1 .column-2 span {
@@ -500,7 +536,7 @@ nav ul {
 
 
 
-/* section 2 */
+/* This is section 2 */
 
 .section-2 h1 {
   margin-top: 2rem;
@@ -568,6 +604,8 @@ nav ul {
   .section-2-container {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+
   }
 
   .section-2 h1 {
@@ -575,7 +613,7 @@ nav ul {
   }
 
   .course {
-    width: 100%;
+    width: 90%;
   }
 
   .course h3 {
@@ -601,7 +639,7 @@ nav ul {
   }
 }
 
-/* section 3 */
+/* This is section 3 */
 
 .section-3 h1 {
   text-align: center;
@@ -651,6 +689,8 @@ nav ul {
 .section-3 .column-2 .article-2 {
   display: flex;
   flex-direction: row;
+  border: 1px solid hsl(0, 0%, 80%);
+  margin-top: 1rem;
 }
 
 .section-3 .column-2 .article-2-text {
@@ -731,7 +771,7 @@ nav ul {
   }
 }
 
-/*footer*/
+/* This is the footer */
 
 footer {
   display: flex;
@@ -743,6 +783,10 @@ footer {
 footer span {
   margin-top: 1rem;
   padding: 0.5rem;
+}
+
+footer a {
+  color: black;
 }
 
 #copyright {
